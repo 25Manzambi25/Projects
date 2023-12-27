@@ -1,0 +1,106 @@
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.film{
+  height: 60px;
+  width: 100px;
+  border-radius: 60px;
+  margin-right: 10px;
+  font-size: 25px;
+  font-weight:normal;
+  background-color: rgb(33, 39, 46);
+  font-style: arial;
+  border: none;
+  color: whitesmoke
+  
+}
+.pluto{
+  height: 60px;
+  width: 300px;
+  border-radius: 60px;
+  margin-right: 10px;
+  font-size: 25px;
+  font-weight:normal;
+  background-color: rgb(33, 39, 46);
+  font-style: arial;
+  border: none;
+  color: whitesmoke
+}
+.new {
+  height: 60px;
+  width: 100px;
+  border-radius: 60px;
+  margin-right: 10px;
+  font-size: 30px;
+  font-weight:normal;
+  background-color: rgb(33, 39, 46);
+  font-style: arial;
+  border: none;
+  color: whitesmoke
+}
+.live2 {
+    height: 60px;
+    width: 100px;
+    border-radius: 60px;
+    margin-right: 10px;
+    font-size: 25px;
+    font-weight:normal;
+    background-color: rgb(33, 39, 46);
+    font-style: arial;
+    border: none;
+    color: whitesmoke;
+
+}
+
+.bambini{
+  height: 60px;
+  width: 180px;
+  border-radius: 60px;
+  margin-right: 10px;
+  font-size: 25px;
+  font-weight:normal;
+  background-color: rgb(33, 39, 46);
+  font-style: arial;
+  border: none;
+  color: whitesmoke;
+
+}
+
+.fitness {
+  height: 60px;
+  width: 120px;
+  border-radius: 60px;
+  margin-right: 10px;
+  font-size: 25px;
+  font-weight:normal;
+  background-color: rgb(33, 39, 46);
+  font-style: arial;
+  border: none;
+  color: whitesmoke;
+
+}
+.short{
+  height: 60px;
+  width: 180px;
+  border-radius: 60px;
+  margin-right: 10px;
+  font-size: 25px;
+  font-weight:normal;
+  background-color: rgb(33, 39, 46);
+  font-style: arial;
+  border: none;
+  color: whitesmoke;
+
+}
+.flex-container {
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+}
+.image-container {
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+}
