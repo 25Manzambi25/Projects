@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+   :root { 
+    --gray-1: #141414;
+  --gray-2: #1f1f1f;
+  --gray-3: #333333;
+  --white: #ffffff;
+  --green: #c4f82a;
+}
+body {
+  background-color: var(--gray-1);
+}
+.unorder {
+  width: 400px;
+  height: auto;
+  background-color: var(--gray-2);
+  border-radius: 20px;
+  
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.git, .front, .linked, .twitt, .insta {
+width: 300px;
+height: 50px;
+margin-bottom: 20px;
+border-radius: 10px;
+background-color: var(--gray-3);
+color: var(--white);
+
+font-family: 'Inter', sans-serif;
+cursor: pointer;
+border-color: var(--gray-3);
+}
+.git:hover, .front:hover, .linked:hover, .twitt:hover,
+.insta:hover {
+  background-color: var(--green);
+  color: var(--gray-1);
+  
+}
+h1 {
+  text-align:center;
+  flex-grow: 1;
+  margin-right: auto;
+  margin-left: auto;
+  color: var(--white);
+  font-family: 'Inter', sans-serif;
+  font-size: 25px;
+}
+h2 {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  flex-grow: 1;
+  color: var(--green);
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+}
+p {
+  color: white;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  font-size:small;
+  font-weight: lighter;
+  font-family: 'Inter', sans-serif;
+ 
+}
+ul {
+  list-style: none;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  
+}
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <ul class="unorder">
+      <img src="/HTML/Jessic.jpeg" width="106px" height="106px" alt="Jessica" id="Jessi" class="center">
+      <h1>Jessica Randall</h1>
+      <h2>London, United Kingdom</h2>
+      <p>"Front-end developer and avid reader"</p>
+      <li><a href="https://github.com/25Manzambi25/"><button class="git">Github</button></a></li>
+      <li><a href="https://www.frontendmentor.io/home"><button class="front">Frontend Mentor</button></a></li>
+      <li><a href="https://it.linkedin.com/in/manzambi-futo-515940154"><button class="linked">LinkedIn</button></a></li>
+      <li><a href="https://twitter.com/"><button class="twitt">Twitter</button></a></li>
+      <li><a href="https://www.instagram.com/25manzambi25/"><button class="insta">Instagram</button></a></li>
+    </ul>
+  </div>
+</body>
+</html>
