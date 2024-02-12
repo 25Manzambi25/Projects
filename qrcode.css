@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+.container{
+display: flex;
+justify-content: center;
+background-color:lightskyblue;
+box-sizing: border-box;
+font-family: 'Outfit', sans-serif;
+
+    
+}
+
+
+.item1{
+    height: 500px;
+    width: 300px;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 20px;
+}
+.profile-img {
+    border-radius: 20px;
+}
+.front, .grey {
+    text-align: center;
+}
+.grey {
+    color: lightgray;
+    font-weight: bold;
+}
