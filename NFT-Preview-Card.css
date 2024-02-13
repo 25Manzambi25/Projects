@@ -1,0 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+    body {
+      height: 100%;
+      width: 100%;
+      background-color:hsl(217, 54%, 11%);
+      font-family: 'Outfit', sans-serif;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      box-sizing: border-box;
+    }
+    .item1 {
+    background-color: #15263F;
+    height:600px; 
+    width: 300px;   
+    padding: 20px; 
+    border-radius: 20px;
+    }
+    .profile-img{
+     border-radius: 20px;
+    }
+    .equi {
+      color: white;
+    }
+    .balance {
+      color: #8BACD9;
+    }
+    .item2 {
+      justify-content: space-between;
+     
+    }
+    .eth{
+      color: aqua;
+      font-weight: bold;
+    }
+    .three {
+      color: #8BACD9;
+    }
+    hr {
+      color:  #2E405A;
+    }
+    .jules {
+      color: white;
+    }
+    .creation {
+      color: #8BACD9;
+    }
