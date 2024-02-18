@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .flex-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .flex-item1{
+      width: 450px;
+      height: 450px;
+      background-color: blueviolet;
+      padding-left: 60px;
+      padding-right: 40px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+    .flex-item2 {
+      width: 450px;
+      height:450px;
+      background-color: blueviolet;
+    }
+    .profile {
+      width: 450px;
+      height: 450px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      mix-blend-mode: multiply;
+      opacity: 1;
+    }
+    .business{
+      font-family: 'Inter', sans-serif;
+      color: white;
+      font-size: 30px;
+    }
+    .insights {
+      color: orchid;
+    }
+    .discover {
+      color:azure;
+      font-family: 'Lexend Deca', sans-serif;
+      font-size: 17px;
+      font-weight: lighter;
+      gap: 1px;
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+    .flexbox4 {
+      display: flex;
+      gap: 20px;
+    }
+    .dieci, .trecento, .twelve {
+      color: white;
+      font-size: 25px;
+      font-weight: bold;
+    }
+    .ctq {
+      color:wheat;
+      font-size: 15px;
+      font-weight: lighter;
+     
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="flex-item1">
+<h2 class="business">Get <span class="insights">insights</span>
+  that help <br>your business grow.
+</h2>
+<p class="discover">Discover the benefits of data analytics and make <br>
+better decision regarding revenue, customer <br>
+experience, and overall efficiency</p>
+<div class="flexbox4">
+  <div class="dieci">10k+ <br><span class="ctq">COMPANIES</span></div>
+  <div class="trecento">314 <br><span class="ctq">TEMPLATES</span></div>
+  <div class="twelve">12M+ <br><span class="ctq">QUERIES</span></div>
+  
+</div>
+    </div>
+    <div class="flex-item2">
+      <img src="image-header-desktop.jpg" alt="name" class="profile">
+    </div>
+  </div>
+</body>
+</html>
