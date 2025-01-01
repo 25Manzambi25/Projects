@@ -1,0 +1,540 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 40px;
+  font-weight:lighter;
+  background-color: whitesmoke;
+  color: white;
+  
+}
+a{
+text-decoration: none;
+
+}
+
+/* Rimuove il colore viola sui link visitati */
+a:visited {
+  color: inherit;
+  background-color: white;
+}
+
+/* Modifica il colore dei link quando il mouse passa sopra */
+a:hover {
+  color: darkblue;
+   
+}
+
+/* Modifica il colore del link quando viene cliccato */
+a:active {
+  color: darkgreen;
+  background-color: white;
+}
+
+.item-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+
+  
+}
+.left-header{
+  display: flex;
+margin-left: 80px;
+margin-top: 20px;
+gap: 7px;
+background-color: whitesmoke;
+
+}
+
+.left-header span:hover{
+  cursor: pointer;
+  border-radius: 2px;
+  height: 15px;
+  filter: brightness(150%);
+  color: white;
+  background-color: black;
+  border: 5px solid grey;
+  padding: 5px;
+ 
+}
+.left-header span{
+  background-color: whitesmoke;
+  color: black;
+
+}
+.center-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 17px;
+}
+.right-header{
+  display: flex;
+  margin-right: 80px;
+  margin-top: 20px;
+  gap: 18px;
+  margin-left: 2px;
+}
+.right-header img:hover{
+  cursor: pointer;
+  filter: brightness(60%);
+  gap: 60px;
+  
+}
+
+/*
+fr same as a flex grow 
+flexibly size themselves
+based on the items they have
+inside them
+minmax
+autorows
+*/
+.padre{
+  background-color: whitesmoke;
+
+}
+.grid-container{
+  display: grid;
+  grid-template-columns:  386px 580px 386px;;/**prima colonna 2fr
+  seconda colonna 1fr*/
+  grid-template-rows: 386px;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: whitesmoke;
+  
+}
+
+.grid-item1{
+  background-color: antiquewhite;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+.grid-item1 img, .grid-item2 img{
+  border-radius: 40px;
+}
+
+.grid-item1 img:hover, .grid-item2 img:hover{
+  opacity: 0; /* Nasconde l'immagine */
+  background-color: antiquewhite;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.grid-item1 img {
+  transition: opacity 0.7s ease-in-out; /* Aggiunge una transizione fluida di 0.7 secondi quando cambia l'opacità */
+  border-radius: 40px; /* Arrotonda gli angoli del contenitore con un raggio di 40px */
+  width: 100%; /* Imposta la larghezza del contenitore per occupare il 100% dello spazio disponibile del suo elemento genitore */
+   position: relative; /* Posiziona l'elemento in relazione alla sua posizione normale, permettendo un posizionamento tramite top, left, etc. */
+  z-index: 1; /* Imposta il livello di profondità dell'elemento, ponendolo sopra altri elementi con un valore di z-index inferiore */
+  
+}
+.grid-item1:hover{
+  background-image: url(/IMMAGINI/OZZANOMARITTIMACONTATTI3.jpg);
+  background-size: contain; /* Adatta l'immagine di sfondo al contenitore mantenendo il rapporto */
+  background-position: center; /* Centra l'immagine di sfondo */
+  background-color: whitesmoke;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  
+}
+
+
+.grid-item2{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color:antiquewhite;
+
+}
+.grid-item2 img {
+  transition: opacity 0.7s ease-in-out; /* Aggiunge una transizione fluida di 0.7 secondi quando cambia l'opacità */
+  position: relative; /* Posiziona l'elemento in relazione alla sua posizione normale, permettendo un posizionamento tramite top, left, etc. */
+  z-index: 1; /* Imposta il livello di profondità dell'elemento, ponendolo sopra altri elementi con un valore di z-index inferiore */
+  width:  386px;
+}
+.grid-item2 img:hover{
+  opacity: 0; /* Nasconde l'immagine */
+  background-color: antiquewhite;
+  border-radius:40px;
+  width: 386px;
+  height: 386px;
+}
+
+.grid-item2:hover{
+  background-image: url(/IMMAGINI/padrera.jpg);
+  background-size:contain; /* Adatta l'immagine di sfondo al contenitore mantenendo il rapporto */
+  background-position:center; /* Centra l'immagine di sfondo */
+  background-color: antiquewhite;
+  background-repeat: no-repeat;
+
+}
+
+.grid-item3 {
+  background-color: antiquewhite;
+  border-top-right-radius: 40px; /* Uniforma il bordo per il contenitore */
+  border-bottom-right-radius: 40px;
+  overflow: hidden; /* Nasconde qualsiasi contenuto che esce dai bordi */
+  position: relative; /* Necessario per il posizionamento dell'immagine */
+}
+
+.grid-item3 img {
+  width: 386px; /* Assicura che l'immagine occupi tutta la larghezza del contenitore */
+  height: 386px; /* Fa sì che l'immagine occupi tutta l'altezza */
+  object-fit: cover; /* Mantiene il rapporto dell'immagine, adattandola senza deformarla */
+  transition: opacity 0.7s ease-in-out; /* Aggiunge la transizione per l'effetto hover */
+  border-radius: 40px; /* Uniforma il bordo dell'immagine al contenitore */
+  position: absolute; /* Posiziona l'immagine in modo assoluto all'interno del contenitore */
+  top: 0;
+  left: 0;
+  z-index: 1; /* Posiziona l'immagine sopra altri elementi */
+  background-color: antiquewhite;
+}
+
+.grid-item3 img:hover {
+  opacity: 0; /* Nasconde l'immagine al passaggio del mouse */
+  background-color: antiquewhite;
+  object-fit: cover;
+
+
+}
+
+.grid-item3:hover {
+  background-image: url(/IMMAGINI/BackgroundOzzanoMarittima3.jpg);
+  background-size: cover; /* Adatta l'immagine di sfondo senza deformarla */
+  background-position: center; /* Centra l'immagine di sfondo */
+  background-color: antiquewhite;
+  border-radius: 40px; /* Mantiene il bordo uniforme anche al passaggio del mouse */
+  gap:0;
+  margin: 0;
+}
+
+
+.ozzanobella{
+  display: grid;
+  grid-template-columns:386px 580px 386px;
+  grid-template-rows:210px;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  color: black;
+
+}
+.ozzanobella :hover{
+cursor: pointer;
+display: grid;
+justify-content: center;
+align-items: center;
+}
+.ozzanomarittima{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  margin-bottom: 110px;
+  border: solid 3px black;
+  font-size: 35px;
+}
+
+.ozzanomarittima:hover{
+  background-color: black;
+  font-size: auto;
+  color: white;
+  height: auto;
+  width: 385px;
+}
+.grid-item2-specific{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  color: black;
+  font-size: 35px;
+  margin-left: 98px;
+  margin-right: 90px;
+  margin-bottom: 80px;
+  border: solid 3px black;
+}
+
+.grid-item2-specific2{
+  display: grid;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: whitesmoke;
+  color: black;
+  font-size: 35px;
+  margin-bottom: 80px;
+  border: solid 3px black;
+}
+.grid-item2-specific:hover, .grid-item2-specific2:hover{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: whitesmoke;
+}
+.horizontal-line-date{
+  background-color: black;
+  color: white;
+  width: 100%;
+  border: solid 3px black;
+}
+
+/* Effetto hover per cambiare l'immagine di sfondo */
+.tour{
+  display: grid;
+  grid-template-columns: 500px 600px 400px;
+  background-color: black;
+  
+}
+.tour *{
+ 
+  background-color: black;
+  margin-left: 80px;
+}
+.tour1,.tour2{
+  display: grid;
+  justify-content:flex-start;
+  align-items: center;
+}
+
+.tour3,.tour6{
+  display: grid;
+  justify-content: flex-end;
+  margin-right: 80px;
+}
+.bolo {
+  display: flex;
+  justify-content: start; /* Allinea gli elementi orizzontalmente a sinistra */
+  align-items: center;    /* Centra verticalmente */
+  font-size: 20px;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;       /* Assicura l'allineamento del testo */
+  padding: 0;             /* Rimuove padding interno, se presente */
+  margin: 0;              /* Rimuove margini esterni, se presenti */
+}
+
+.date-tour{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.horizontal-line{
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+.horizontal-line-home{
+  background-color: black;
+  width: 100%;
+  border: solid 3px black;
+  color: white;
+}
+
+.home-ozzano,.home-font{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.home-font-dj-set{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  margin-bottom: 70px;
+  
+}
+.horizontal-line{
+  background-color:whitesmoke;
+  color: black;
+  width: 100%;
+}
+.horizontal-line-dj-set{
+  color: black;
+  border: solid 3px black;
+}
+
+.djset1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.djset1:hover{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    color: black;
+}
+.djset-grid{
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 400px;
+  margin-left: 80px;
+
+  margin-top: 50px;
+  margin-bottom: 10px;
+  gap: 100px;
+  background-color: whitesmoke;
+}
+video{
+  background: none;
+  width: 386px;
+}
+
+.footer-ozzano{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+  
+}
+.footer-ozzano{
+  cursor: pointer;
+display: grid;
+justify-content: center;
+align-items: center;
+background-color: black;
+color: whitesmoke;
+height:max-content;
+
+}
+.footer-ozzano:hover{
+  cursor: pointer;
+display: grid;
+
+justify-content: center;
+align-items: center;
+background-color: whitesmoke;
+color: black;
+}
+.contatti-finali {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 386px 580px 386px;
+  grid-template-rows: 386px;
+}
+
+.contatti-item {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 386px;
+  height: 386px;
+  overflow: hidden;
+}
+
+.contatti-item img {
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.contatti-item .contatti-text {
+  position: absolute;
+  width: 100%;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  font-weight: bold;
+  color:black;
+  background-color: white;
+  text-align: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Evita che il testo interferisca con il mouse */
+}
+
+.contatti-item:hover img {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.contatti-item:hover .contatti-text {
+  opacity: 1;
+}
+
+
+.contatti-item:hover .contatti-text-mail {
+  opacity: 1;
+}
+
+/*
+MOBILE
+*/
+
+/* Media Query per dispositivi mobili */
+@media (max-width: 768px) {
+  body {
+    font-size: 18px; /* Riduce la dimensione del font */
+  }
+  
+  .item-header {
+    flex-direction: column; /* Cambia la direzione del layout */
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .left-header, .right-header {
+    margin: 0; /* Rimuove margini aggiuntivi */
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr; /* Una colonna per adattarsi allo schermo piccolo */
+    grid-template-rows: auto;
+    margin: 10px; /* Riduce i margini */
+  }
+  
+  .grid-item1, .grid-item2, .grid-item3 {
+    height: auto; /* Adatta l'altezza automaticamente */
+    margin: 10px 0; /* Spaziatura tra le griglie */
+  }
+  
+  .ozzanobella {
+    grid-template-columns: 1fr; /* Riduce a una colonna */
+    grid-template-rows: auto;
+    font-size: 20px; /* Riduce la dimensione del testo */
+  }
+
+  .contatti-finali {
+    grid-template-columns: 1fr; /* Una colonna */
+    grid-template-rows: auto;
+    margin: 10px; /* Margini più piccoli */
+  }
+  
+  .contatti-item {
+    width: 100%; /* Adatta alla larghezza del contenitore */
+    height: auto; /* Adatta l'altezza automaticamente */
+  }
+
+  .footer-ozzano {
+    font-size: 20px; /* Riduce il font */
+    margin: 20px; /* Riduce i margini */
+  }
+
+  .djset-grid {
+    grid-template-columns: 1fr; /* Una sola colonna per dispositivi mobili */
+    grid-template-rows: auto;
+    gap: 20px; /* Riduce la spaziatura */
+  }
+}
